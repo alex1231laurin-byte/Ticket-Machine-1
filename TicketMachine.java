@@ -22,6 +22,7 @@ public class TicketMachine
      * Create a machine that issues tickets of the given price.
      * Note that the price must be greater than zero, and there
      * are no checks to ensure this.
+     * (Alex) The constructor only works once, and requires an imput to start the code.
      */
     public TicketMachine(int cost)
     {
