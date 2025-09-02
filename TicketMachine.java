@@ -24,9 +24,9 @@ public class TicketMachine
      * are no checks to ensure this.
      * (Alex) The constructor only works once, and requires an imput to start the code.
      */
-    public TicketMachine(int price)
+    public TicketMachine(int amount)
     {
-        price = price;
+        price = amount;
         balance = 0;
         total = 0;
     }
@@ -85,5 +85,10 @@ public class TicketMachine
     public int getTotal()
     {
         return total;
+    }
+    
+    public void empty()
+    {
+        total = 0;
     }
 }
