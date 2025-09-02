@@ -10,6 +10,7 @@ public class Book
     // instance variables - replace the example below with your own
     private int price;
     private String title;
+    private int balance;
 
     /**
      * Constructor for objects of class Book
@@ -36,5 +37,15 @@ public class Book
     public int getPrice()
     {
         return price;
+    }
+    
+    public void insertMoney(int amount)
+    {
+        balance += amount;
+    }
+    
+    public int getbalance()
+    {
+        return balance;
     }
 }
