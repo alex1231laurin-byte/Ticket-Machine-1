@@ -48,4 +48,9 @@ public class Book
     {
         return balance;
     }
+    
+    public void discount(int discountAmount)
+    {
+        price -= discountAmount;
+    }
 }

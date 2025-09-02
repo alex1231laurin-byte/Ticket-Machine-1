@@ -24,9 +24,9 @@ public class TicketMachine
      * are no checks to ensure this.
      * (Alex) The constructor only works once, and requires an imput to start the code.
      */
-    public TicketMachine(int cost)
+    public TicketMachine(int price)
     {
-        price = cost;
+        price = price;
         balance = 0;
         total = 0;
     }
@@ -56,6 +56,11 @@ public class TicketMachine
         balance = balance + amount;
     }
 
+    public void prompt()
+    {
+        System.out.println("Please insert the correct amount of money");
+    }
+    
     /**
      * Print a ticket.
      * Update the total collected and
